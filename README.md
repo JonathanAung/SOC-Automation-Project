@@ -25,28 +25,12 @@ The cloud infrastructure has since been taken down to manage costs. Everything i
 
 <h2>Architecture</h2>
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                    DigitalOcean Cloud                    │
-│                                                         │
-│  [Windows 10 Endpoint]                                  │
-│       │                                                 │
-│       │ Sysmon + Wazuh Agent                            │
-│       ▼                                                 │
-│  [Wazuh Manager 4.7.3] ──── webhook ────► [Shuffle]    │
-│                                               │         │
-│                          ┌────────────────────┤         │
-│                          ▼                    ▼         │
-│                     [AbuseIPDB]          [TheHive 5]    │
-│                     IP Reputation        Case Created   │
-│                          │                    │         │
-│                          └────────────────────┘         │
-│                                    │                    │
-│                                    ▼                    │
-│                           [Email Notification]          │
-│                           Analyst Notified              │
-└─────────────────────────────────────────────────────────┘
-```
+<p align="center">
+Diagram of Project: <br/>
+<img src="https://image2url.com/r2/default/images/1774840702514-f6a10adc-1742-4777-b2e3-611d3bed7a76.png" alt="image" />
+</p>
+
+
 
 <h2>Stack</h2>
 
