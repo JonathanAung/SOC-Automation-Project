@@ -17,7 +17,7 @@
 
 <h2>Why I Built This</h2>
 
-Most SOC training teaches you to use tools. I wanted to understand how they actually talk to each other and how to make them respond without waiting for a human in the loop. The goal wasn't to follow a guide — it was to build something that breaks, force myself to fix it, and document what I learned.
+Most SOC training teaches you to use tools. I wanted to understand how they actually talk to each other and how to make them respond without waiting for a human in the loop. The goal wasn't to follow a guide, it was to build something that breaks, force myself to fix it, and document what I learned.
 
 The cloud infrastructure has since been taken down to manage costs. Everything is documented here so it can be rebuilt.
 
@@ -97,7 +97,7 @@ Diagram of Project: <br/>
 <details>
 <summary><b>TheHive v4 vs v5 API mismatch</b></summary>
 <br>
-The Shuffle app for TheHive was built for v4. TheHive 5.2.4 changed the endpoint from <code>/api/alert</code> to <code>/api/v1/alert</code> and added two required fields (<code>type</code> and <code>source</code>) that v4 didn't enforce. Cases were being sent but silently not creating — no error, just nothing in TheHive.
+The Shuffle app for TheHive was built for v4. TheHive 5.2.4 changed the endpoint from <code>/api/alert</code> to <code>/api/v1/alert</code> and added two required fields (<code>type</code> and <code>source</code>) that v4 didn't enforce. Cases were being sent but silently not creating, no error, just nothing in TheHive.
 
 Fixed by switching the Shuffle HTTP action to the correct endpoint and hardcoding the two missing fields as static values.
 </details>
@@ -162,7 +162,7 @@ The Python and Bash automation scripts are in the `/scripts` folder.
 <h2>What I'd Change Next</h2>
 
 - [ ] Add MITRE ATT&CK tags to every TheHive case automatically by mapping Wazuh rule IDs at the Shuffle layer
-- [ ] Switch from email to Slack for notifications — faster response loop
+- [ ] Switch from email to Slack for notifications, faster response loop
 - [ ] Containerize the whole stack with Docker Compose so it spins up in one command
 - [ ] Add a feedback loop where false positive case closures in TheHive automatically tune the Wazuh rule threshold
 
@@ -170,7 +170,7 @@ The Python and Bash automation scripts are in the `/scripts` folder.
 
 <h2>Related</h2>
 
-[Active Directory Home Lab](https://github.com/JonathanAung/Active-Directory-Project-HomeLab-) — the endpoint feeding events into this pipeline
+[Active Directory Home Lab](https://github.com/JonathanAung/Active-Directory-Project-HomeLab-) the endpoint feeding events into this pipeline
 
 ---
 
