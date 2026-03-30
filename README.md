@@ -27,7 +27,7 @@ The cloud infrastructure has since been taken down to manage costs. Everything i
 
 <p align="center">
 Diagram of Project: <br/>
-<img src="https://image2url.com/r2/default/images/1774840702514-f6a10adc-1742-4777-b2e3-611d3bed7a76.png" alt="image" />
+<img src="Diagram.drawio" width="80%" alt="SOC Automation Diagram" />
 </p>
 
 
